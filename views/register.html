@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%=shopName%></title>
+    <link href="register.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Register for <%=shopName%></h1>
+    <form method="POST" action="/registered">
+        <p>First Name:</p>
+        <input id="first" type="text" name="first" value="first name" />
+        <br><br>
+        <p>Last Name:</p>
+        <input id="last" type="text" name="last" value="last name" />
+        <br><br>
+        <p>Email:</p>
+        <input id="email" type=email name="email" value="email" />
+        <br><br>
+        <input id="button" type="submit" value="OK" />
+      </form>
+  </body>
+</html>

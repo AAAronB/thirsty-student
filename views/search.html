@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title> <%=shopName%></title>
+<link href="search.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Welcome to<%=shopName%>'s Search Tool</h1>
+<h2>You can use the search bar here to search for anything on Wikipedia</h2>
+<form action="/search-result" method="GET">
+  <input id="search-box" type="text" name="keyword" value="Enter the webpage">
+  <input type="submit" value="OK" >
+</form>
+<input id='search' placeholder="Type a keyword and press Enter to search" type="search" class="search-input js-search-input" autofocus/>
+<div class="loading-indicator">
+    <div class="sk-chase js-spinner hidden">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </div>
+<section class="search-results js-search-results"></section>
+<script src="search.js"></script>
+</body>
+</html>

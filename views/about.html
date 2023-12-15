@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<title><%=shopName%></title>
+</head>
+<body>
+<h1>About <%=shopName%></h1>
+<ul>
+    <% for(let i = 0; i < productCategories.length; i++) { %>
+    <li><%= productCategories[i] %></li>
+    <% } %>
+    </ul>
+<p>List of Managers:</p>
+<ul>
+    <% for(let i = 0; i < productCategories.length; i++) { %>
+    <li><%=storeLocations[i]%></li>
+    <% } %>
+    </ul>
+</body>
+</html>
